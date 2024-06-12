@@ -10,6 +10,7 @@ module org.example.list_staff_javafx {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     opens org.example.list_staff_javafx to javafx.fxml;
     exports org.example.list_staff_javafx;

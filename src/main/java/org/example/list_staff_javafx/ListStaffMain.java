@@ -13,7 +13,7 @@ public class ListStaffMain extends Application
     public void start(Stage stage) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(ListStaffMain.class.getResource("ListStaffView.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(),400,400);
+        Scene scene = new Scene(fxmlLoader.load(),600,400);
         stage.setTitle("List Staff");
         stage.setScene(scene);
         stage.show();
