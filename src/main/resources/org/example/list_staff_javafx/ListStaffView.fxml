@@ -10,22 +10,24 @@
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="org.example.list_staff_javafx.ListStaffMainController"
+
+          styleClass="bootstrap"
           hgap="10" vgap="10">
 
     <padding>
         <Insets bottom="10" left="10" right="10" top="10"/>
     </padding>
 
-    <Label text="ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <TextField fx:id="IDTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"/>
+<!--    <Label text="ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />-->
+<!--    <TextField fx:id="IDTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"/>-->
 
-    <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="lbl, lbl-default"/>
     <TextField fx:id="NameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"/>
 
-    <Label text="Age" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label text="Age" GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="lbl, lbl-default"/>
     <TextField fx:id="AgeTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.hgrow="ALWAYS"/>
 
-    <Label text="IdNumber" GridPane.columnIndex="0" GridPane.rowIndex="3"  />
+    <Label text="IdNumber" GridPane.columnIndex="0" GridPane.rowIndex="3"  styleClass="lbl, lbl-default"/>
     <TextField fx:id="IdNumberTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.hgrow="ALWAYS"/>
 
     <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2">
@@ -33,12 +35,12 @@
             <Insets bottom="10" left="10" right="10" top="10"/>
         </padding>
 
-        <Button text="Add" onAction="#AddPerson"/>
-        <Button text="Update" onAction="#UpdatePerson"/>
-        <Button text="Delete" onAction="#DeletePerson"/>
-        <Button text="Print" onAction="#Print"/>
-        <Button text="FindByIdNumber" onAction="#FindByIdNumber"/>
-        <Button text="FindByName" onAction="#FindByName"/>
+        <Button text="Add" onAction="#AddPerson" styleClass="btn, btn-primary"/>
+        <Button text="Update" onAction="#UpdatePerson" styleClass="btn, btn-primary"/>
+        <Button text="Delete" onAction="#DeletePerson" styleClass="btn, btn-warning"/>
+        <Button text="Print" onAction="#Print" styleClass="btn, btn-info"/>
+        <Button text="FindByIdNumber" onAction="#FindByIdNumber" styleClass="btn, btn-primary"/>
+        <Button text="FindByName" onAction="#FindByName" styleClass="btn, btn-primary"/>
     </HBox>
 
     <TextArea fx:id="displayArea"
@@ -49,4 +51,5 @@
               GridPane.hgrow="ALWAYS"
               GridPane.vgrow="ALWAYS"
               editable="false"/>
+
 </GridPane>
